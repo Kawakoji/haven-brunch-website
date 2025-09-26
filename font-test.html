@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Police - Haven Brunch</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #4E342E;
+            background-color: #FAF4EF;
+            margin: 0;
+            padding: 2rem;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #FDFBF9;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(78, 52, 46, 0.1);
+        }
+        
+        .comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .current {
+            background: rgba(232, 216, 195, 0.3);
+            padding: 1.5rem;
+            border-radius: 10px;
+        }
+        
+        .future {
+            background: rgba(185, 133, 101, 0.1);
+            padding: 1.5rem;
+            border-radius: 10px;
+        }
+        
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            color: #4E342E;
+            margin-bottom: 1rem;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+        }
+        
+        h2 {
+            font-size: 2rem;
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+        }
+        
+        p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #4E342E;
+            opacity: 0.9;
+        }
+        
+        .status {
+            background: #B98565;
+            color: white;
+            padding: 1rem;
+            border-radius: 10px;
+            margin: 1rem 0;
+            text-align: center;
+        }
+        
+        .note {
+            background: rgba(185, 133, 101, 0.1);
+            padding: 1rem;
+            border-radius: 10px;
+            border-left: 4px solid #B98565;
+            margin: 2rem 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Test des Polices - Haven Brunch</h1>
+        
+        <div class="status">
+            <strong>État Actuel :</strong> Polices de fallback (Playfair Display + Inter)
+        </div>
+        
+        <div class="comparison">
+            <div class="current">
+                <h3>Actuellement (Fallback)</h3>
+                <h2>HAVEN BRUNCH</h2>
+                <p>Un brunch raffiné pour élever vos moments précieux</p>
+                <p>Police : Playfair Display (Google Fonts)</p>
+            </div>
+            
+            <div class="future">
+                <h3>Après installation Adumu</h3>
+                <h2>HAVEN BRUNCH</h2>
+                <p>Un brunch raffiné pour élever vos moments précieux</p>
+                <p>Police : Adumu (installée localement)</p>
+            </div>
+        </div>
+        
+        <div class="note">
+            <strong>Pour voir la différence :</strong><br>
+            1. Téléchargez les fichiers Adumu (.woff2, .woff, .ttf)<br>
+            2. Placez-les dans le dossier <code>/fonts/</code><br>
+            3. Poussez sur GitHub → Netlify se met à jour automatiquement
+        </div>
+        
+        <h2>Éléments qui changeront avec Adumu :</h2>
+        <ul>
+            <li>✅ Tous les paragraphes</li>
+            <li>✅ Navigation</li>
+            <li>✅ Boutons</li>
+            <li>✅ Formulaires</li>
+            <li>✅ Texte du corps</li>
+        </ul>
+        
+        <h2>Éléments qui resteront avec TAN-NEW-YORK :</h2>
+        <ul>
+            <li>🎨 Tous les titres (h1, h2, h3, h4, h5, h6)</li>
+            <li>🎨 Logo de marque</li>
+            <li>🎨 Titres de sections</li>
+        </ul>
+    </div>
+</body>
+</html>
