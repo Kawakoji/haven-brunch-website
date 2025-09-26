@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haven Brunch - Démonstration Typographie TAN-NEW-YORK</title>
+    <style>
+        /* Import des polices de fallback */
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+        
+        /* Configuration TAN-NEW-YORK (une fois les fichiers installés) */
+        @font-face {
+            font-family: 'TAN-NEW-YORK';
+            src: url('./TAN-NEW-YORK-Regular.woff2') format('woff2'),
+                 url('./TAN-NEW-YORK-Regular.woff') format('woff');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+        
+        @font-face {
+            font-family: 'TAN-NEW-YORK';
+            src: url('./TAN-NEW-YORK-Bold.woff2') format('woff2'),
+                 url('./TAN-NEW-YORK-Bold.woff') format('woff');
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap;
+        }
+        
+        body {
+            font-family: 'Adumu', 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #4E342E;
+            background-color: #FAF4EF;
+            margin: 0;
+            padding: 2rem;
+        }
+        
+        .demo-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #FDFBF9;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(78, 52, 46, 0.1);
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'TAN-NEW-YORK', 'Playfair Display', 'Times New Roman', serif;
+            font-weight: 400;
+            line-height: 1.2;
+            color: #4E342E;
+            letter-spacing: -0.02em;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            margin-bottom: 1rem;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            letter-spacing: -0.03em;
+            margin-bottom: 1.5rem;
+        }
+        
+        h2 {
+            font-size: 2.5rem;
+            margin-top: 2rem;
+        }
+        
+        h3 {
+            font-size: 2rem;
+        }
+        
+        h4 {
+            font-size: 1.5rem;
+        }
+        
+        h5 {
+            font-size: 1.25rem;
+        }
+        
+        h6 {
+            font-size: 1.1rem;
+        }
+        
+        p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #4E342E;
+            opacity: 0.9;
+            margin-bottom: 1rem;
+        }
+        
+        .brand-name {
+            font-family: 'TAN-NEW-YORK', 'Playfair Display', serif;
+            font-size: 2rem;
+            color: #B98565;
+            letter-spacing: 2px;
+            margin-bottom: 2rem;
+        }
+        
+        .note {
+            background: rgba(185, 133, 101, 0.1);
+            padding: 1rem;
+            border-radius: 10px;
+            border-left: 4px solid #B98565;
+            margin: 2rem 0;
+        }
+        
+        .fallback-info {
+            background: rgba(232, 216, 195, 0.3);
+            padding: 1rem;
+            border-radius: 10px;
+            font-size: 0.9rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo-container">
+        <div class="brand-name">HAVEN BRUNCH</div>
+        
+        <h1>Un brunch raffiné pour élever vos moments précieux</h1>
+        
+        <p>Cette démonstration montre comment la police <strong>TAN-NEW-YORK</strong> sera appliquée à tous les titres et éléments de marque du site Haven Brunch.</p>
+        
+        <h2>Notre Histoire</h2>
+        <p>Haven signifie un havre de paix — une invitation à vivre un moment doux, calme et chaleureux autour d'un brunch raffiné.</p>
+        
+        <h3>Nos Valeurs</h3>
+        <p>Nous créons une bulle de douceur lors d'événements précieux, à travers un brunch soigneusement conçu, gastronomique et élégant.</p>
+        
+        <h4>Softness</h4>
+        <p>Une atmosphère apaisante, jamais tape-à-l'œil</p>
+        
+        <h5>Générosité</h5>
+        <p>Des recettes délicieuses, des assiettes généreuses</p>
+        
+        <h6>Attention aux Détails</h6>
+        <p>Présentation, saveur, hospitalité</p>
+        
+        <div class="note">
+            <strong>Note :</strong> Actuellement, vous voyez la police de fallback (Playfair Display). Une fois les fichiers TAN-NEW-YORK installés dans le dossier <code>/fonts/</code>, tous les titres utiliseront automatiquement la police TAN-NEW-YORK pour un look encore plus raffiné et premium.
+        </div>
+        
+        <div class="fallback-info">
+            <strong>Polices de fallback actives :</strong><br>
+            • Titres : TAN-NEW-YORK → Playfair Display → Times New Roman → serif<br>
+            • Texte : Adumu → Inter → system fonts → sans-serif
+        </div>
+    </div>
+</body>
+</html>
